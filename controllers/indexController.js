@@ -1,5 +1,5 @@
 'use strict';
-var tools=myproj.core.tools;
+var tools=moviepro.core.tools;
 
 // var redis = require('redis'),
 //     RDS_PORT = 6379,        //端口号
@@ -49,18 +49,23 @@ var index=function(req,res,next){
         Name:'赵六',
         Age:47
     }
-    tools.cacheSet('byouzykey',JSON.stringify(_stu),(err)=>{
-        if(!err){
-            console.log("写入成功！");
-        }else{
-            console.log("写入失败！");
+    // tools.cacheSet('byouzykey',JSON.stringify(_stu),(err)=>{
+    //     if(!err){
+    //         console.log("写入成功！");
+    //     }else{
+    //         console.log("写入失败！");
+    //     }
+    //     res.render('index',{
+    //         model:{
+    //             username:'zhangsan'
+    //         }
+    //     });
+    // })
+    res.render('index',{
+        model:{
+            username:'zhangsan'
         }
-        res.render('index',{
-            model:{
-                username:'zhangsan'
-            }
-        });
-    })
+    });
 }
 
 var testly=function(req,res,next){

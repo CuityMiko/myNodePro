@@ -1,31 +1,31 @@
 //全局依赖初始化
 module.exports.init = function () {
-    global.myproj = {};
+    global.moviepro = {};
     
     //config
-    myproj.config = require('./config/config');
+    moviepro.config = require('./config/config');
 
     //modules
-    myproj.modules = {};
-    require('./dependencies/modules')(myproj.modules);
+    moviepro.modules = {};
+    require('./dependencies/modules')(moviepro.modules);
 
     //cores
-    myproj.core = {};
-    require('./dependencies/cores')(myproj.core);
+    moviepro.core = {};
+    require('./dependencies/cores')(moviepro.core);
     
     //models
-    myproj.models = {};
-    require('./dependencies/models')(myproj.models);
+    moviepro.models = {};
+    require('./dependencies/models')(moviepro.models);
 
     //services
-    myproj.services = {};
-    require('./dependencies/services')(myproj.services);
+    moviepro.services = {};
+    require('./dependencies/services')(moviepro.services);
 
     //filters
-    myproj.filters = {};
-    require('./dependencies/filters')(myproj.filters);
+    moviepro.filters = {};
+    require('./dependencies/filters')(moviepro.filters);
 
     //controllers
-    myproj.controllers = {};
-    require('./dependencies/controllers')(myproj.controllers);
+    moviepro.controllers = {};
+    require('./dependencies/controllers')(moviepro.controllers);
 }

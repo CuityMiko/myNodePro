@@ -1,4 +1,4 @@
-### 1.使用并安装淘宝npm镜像：
+﻿### 1.使用并安装淘宝npm镜像：
 + npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### 2.使用node-dev

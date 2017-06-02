@@ -1,8 +1,8 @@
 'use strict';
 var dataformat = require('date-format');
-var config = myproj.config,
-    request = myproj.modules.request; 
-var redis = myproj.modules.redis;
+var config = moviepro.config,
+    request = moviepro.modules.request; 
+var redis = moviepro.modules.redis;
 
 /**
  * 克隆JSON对象

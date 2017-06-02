@@ -18,7 +18,7 @@ const app = express();
 require('./dependency').init(); 
 
 //配置
-var config = myproj.config;
+var config = moviepro.config;
 
 //设置view模板
 app.set('views', path.join(__dirname, 'views'));
@@ -66,7 +66,7 @@ app.use(flash());
 
 //过滤器
 //全局身份验证
-// var authorizeFilter = myproj.filters.authorize;
+// var authorizeFilter = moviepro.filters.authorize;
 // app.use(function (req, res, next) {
 //     authorizeFilter.isAuthentication(req, res,next);
 // });
