@@ -1,5 +1,5 @@
 'use strict';
-var tools=moviepro.core.tools;
+var tools=mypro.core.tools;
 
 // var redis = require('redis'),
 //     RDS_PORT = 6379,        //端口号

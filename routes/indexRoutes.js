@@ -1,5 +1,5 @@
 'use strict';
-var indexController = moviepro.controllers.index;
+var indexController = mypro.controllers.index;
 
 module.exports = function (app) {
     app.get('/', function (req, res, next) { //首页

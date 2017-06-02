@@ -1,10 +1,10 @@
-const config = moviepro.config,
-      request = moviepro.modules.request,
-      q = moviepro.modules.q; 
-      rp = moviepro.modules.rp; 
-const host=config.soaCoreHost; //B.moviepro host
-const proHost=config.soaProHost; //moviepro host
-const httprequest = moviepro.core.http; 
+const config = mypro.config,
+      request = mypro.modules.request,
+      q = mypro.modules.q; 
+      rp = mypro.modules.rp; 
+const host=config.soaCoreHost; //B.mypro host
+const proHost=config.soaProHost; //mypro host
+const httprequest = mypro.core.http; 
 
 //get请求
 var getRequest=function(url,jsonObj){
@@ -71,11 +71,11 @@ var postRequest=function(url,jsonObj){
 var _convertHostUrl=function(url){
     if(url.indexOf(":")>-1){
         var newurls=url.split(':');
-        if(newurls[0]=="moviepro")
+        if(newurls[0]=="mypro")
             return proHost+newurls[1];
         else
             return host+url;
-    }else //B.moviepro
+    }else //B.mypro
         return host+url;
 }
 

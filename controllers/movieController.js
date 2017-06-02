@@ -2,7 +2,7 @@
  * 电影模块控制器
  */
 'use strict';
-var movieServices = moviepro.services.movie;
+var movieServices = mypro.services.movie;
 
 // 获取电影列表
 var getlist=function(req, res, next){
