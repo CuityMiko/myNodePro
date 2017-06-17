@@ -31,6 +31,8 @@
     "mongoose-auto-increment": "^5.0.1",
     "morgan": "~1.6.1",
     "node-snowflake": "^0.0.1",
+    "q": "^1.5.0",
+    "redis": "^2.6.3",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "serve-favicon": "~2.3.0",
@@ -40,8 +42,7 @@
   },
   "main": "app.js",
   "devDependencies": {
-    "express-ejs-layouts": "^2.2.0",
-    "redis": "^2.6.3"
+    "express-ejs-layouts": "^2.2.0"
   },
   "author": "cuity",
   "license": "ISC",
