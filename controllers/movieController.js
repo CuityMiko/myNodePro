@@ -21,7 +21,7 @@ var getlist=function(req, res, next){
 }
 
 // post方式获取电影列表
-var getlist=function(req, res, next){
+var postlist=function(req, res, next){
     var obj= {
         start: parseInt(req.body.pageindex-1)*parseInt(req.body.pagecount),
         count:parseInt(req.body.pagecount),
