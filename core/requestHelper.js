@@ -2,8 +2,8 @@ const config = mypro.config,
       request = mypro.modules.request,
       q = mypro.modules.q; 
       rp = mypro.modules.rp; 
-const host=config.soaCoreHost; //B.mypro host
-const proHost=config.soaProHost; //mypro host
+const proHost=config.soaProHost; //mypro proHost
+const apiHost=config.soaApiHost; //mypro apiHost
 const httprequest = mypro.core.http; 
 
 //get请求
@@ -67,16 +67,22 @@ var postRequest=function(url,jsonObj){
     return deferred.promise;
 }
 
-//解析并转换URL
+/**
+ * 解析并转换URL
+ * @param {*请求url} url 
+ * eg: url: /user/getlist => proHost+url
+ *     url: douban:/user/getlist => apiHost[_apiflag]+newurls[1]
+ */
 var _convertHostUrl=function(url){
     if(url.indexOf(":")>-1){
         var newurls=url.split(':');
-        if(newurls[0]=="mypro")
-            return proHost+newurls[1];
+        var _apiflag=newurls[0];
+        if(apiHost.hasOwnProperty(_apiflag))
+            return apiHost[_apiflag]+newurls[1];
         else
-            return host+url;
+           return proHost+newurls[1];
     }else //B.mypro
-        return host+url;
+        return proHost+url;
 }
 
 module.exports={getRequest,postRequest};

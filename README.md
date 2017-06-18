@@ -5,11 +5,14 @@
 + cnpm install node-dev -g
 
 ### 3.安装node_modules
-+ cnpm intstall --save-dev
++ cnpm intstall 
++ 如果安装过程中出现error则反复安装几次即可
 
 ### 4.修改当前项目下的node-dev.bat文件，项目路径改为自己项目的路径
 
 ### 5.双击启动项目根目录下的node-dev.bat文件
+
+### 6.git clone指定分支:git clone -b 分支name github_url --depth 1
 
 ### 目录结构
 + public : 目录是前端静态文件包含前端页面js文件

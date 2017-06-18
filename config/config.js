@@ -11,8 +11,10 @@ module.exports = {
     sessionRedisDb: 1, //redis db(0=全部)
     sessionSecret: 'im myfirewall', //session secret
     //soa 接口地址
-    soaCoreHost: 'http://api.douban.com/v2/movie',
     soaProHost: 'http://120.132.57.7:8001',
+    soaApiHost:{
+        douban:'http://api.douban.com/v2/movie'
+    },
     cookieExpires:7*24*60*60*1000, //cookie过期时间
     soaAliPayUrl:'http://b2capi.youzy.cn/Payments/AlipayWeb/SendSubmit.aspx', //SOA支付宝支付url
     cacheRedisHost: '127.0.0.1', //用于存储cache的redis服务 

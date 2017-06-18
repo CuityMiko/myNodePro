@@ -5,7 +5,7 @@ const request = mypro.core.request;
 
 //测试
 var getmovielist = function (classify,jsonObj) {
-    var url=`/${classify}`;
+    var url=`douban:/${classify}`;
     return request.getRequest(url, jsonObj);
 }
 
