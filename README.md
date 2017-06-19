@@ -27,3 +27,7 @@
 + views : 前台页面文件存放目录
 + app.js : 工程入口文件
 
+### 引入mongoose操作mongodb    --- 2017-06-19
++ core/mongodb.js : 封装mongodb的数据库连接
++ models/StudentModel.js : 数据操作模型，封装数据库的操作方法
+

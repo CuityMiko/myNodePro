@@ -11,6 +11,7 @@ const redisStore = require('connect-redis')(session);
 const flash = require('connect-flash');
 const json2xls = require('json2xls'); //json转成Excel
 var expressLayouts = require('express-ejs-layouts'); //layout for html 
+require('promise.prototype.finally').shim(); // Promise方式加入finally方法
 
 const app = express();
 

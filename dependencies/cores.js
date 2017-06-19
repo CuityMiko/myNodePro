@@ -1,8 +1,9 @@
 //core依赖
-module.exports = function (cores) {
-    cores.tools = require('../core/tools');
-    cores.http = require('../core/httpHelper');
-    cores.request = require('../core/requestHelper');
-    cores.businessConvert = require('../core/businessConvert');
-    cores.businessMethod = require('../core/businessMethod');
+module.exports = function (core) {
+    core.tools = require('../core/tools');
+    core.http = require('../core/httpHelper');
+    core.request = require('../core/requestHelper');
+    core.businessConvert = require('../core/businessConvert');
+    core.businessMethod = require('../core/businessMethod');
+    core.mongodb = require('../core/mongodb');
 }

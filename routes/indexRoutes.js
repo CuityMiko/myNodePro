@@ -9,4 +9,8 @@ module.exports = function (app) {
     app.get('/test', function (req, res, next) { //testly
         indexController.testly(req,res,next);
     });
+
+    app.get('/examples/mongoose', function (req, res, next) { //testly
+        indexController.mongoosetest(req,res,next);
+    });
 }

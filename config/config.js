@@ -19,5 +19,7 @@ module.exports = {
     soaAliPayUrl:'http://b2capi.youzy.cn/Payments/AlipayWeb/SendSubmit.aspx', //SOA支付宝支付url
     cacheRedisHost: '127.0.0.1', //用于存储cache的redis服务 
     cacheRedisPort: 6379, //用于存储cache的redis服务端口
-    cacheRedis_OPTS:{}
+    cacheRedis_OPTS:{},
+    // mongodb数据库连接字符串
+    mongodbUrl:'mongodb://127.0.0.1:27017/demo'
 }; 

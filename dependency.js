@@ -9,7 +9,7 @@ module.exports.init = function () {
     mypro.modules = {};
     require('./dependencies/modules')(mypro.modules);
 
-    //cores
+    //core
     mypro.core = {};
     require('./dependencies/cores')(mypro.core);
     
