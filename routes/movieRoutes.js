@@ -5,11 +5,11 @@
 var movieController = mypro.controllers.movie;
 
 module.exports = function (app) {
-    app.get('/movie/getlist', function (req, res, next) { //获取电影列表
+    app.get('/movie/:movietype/getlist', function (req, res, next) { //获取电影列表
         movieController.getlist(req,res,next);
     });
 
-    app.post('/movie/getlist', function (req, res, next) { //获取电影列表
+    app.post('/movie/:movietype/getlist', function (req, res, next) { //获取电影列表
         movieController.postlist(req,res,next);
     });
 }
