@@ -6,4 +6,6 @@ module.exports = function (controllers) {
     controllers.index = require('../controllers/indexController');
     //电影模块
     controllers.movie = require('../controllers/movieController');
+    // example
+    controllers.example = require('../controllers/exampleController');
 }

@@ -1,8 +1,8 @@
 /**
  * Student数据模型操作
  */
-const mongodb=mypro.core.mongodb;
-// const mongodb=require('../core/mongodb')
+// const mongodb=mypro.core.mongodb;
+const mongodb=require('../core/mongodb')
 
 // Student Schema 结构
 let studentSchema = new mongodb.mongoose.Schema({

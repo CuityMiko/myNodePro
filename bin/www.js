@@ -11,15 +11,18 @@ var config = require('../config/config.js');
 /**
  * Get port from environment and store in Express. 
  */
-
 var port = normalizePort(process.env.PORT || config.listenPort.toString());
 app.set('port', port);
 
 /**
  * Create HTTP server.
  */
-
 var server = http.createServer(app);
+
+/**
+ * Create socket.io
+ */
+require('../core/socketio')(server)
 
 /**
  * Create socket.io

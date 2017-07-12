@@ -6,4 +6,6 @@ module.exports = function (app) {
     require('./indexRoutes')(app);
     // 电影路由
     require('./movieRoutes')(app);
+    // example
+    require('./exampleRoutes')(app);
 };
